@@ -1,0 +1,27 @@
+{
+  "name": "asadasdsdasd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node -r module-alias/register ./lib/main.js",
+    "start:d": "nodemon -r module-alias/register ./lib/main.js",
+    "dev": "nodemon src/main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^4.2.0",
+    "module-alias": "^2.2.3"
+  },
+
+  "_moduleAliases": {
+    "@modules": "lib/modules",
+    "@services": "lib/services"
+  }
+}
